@@ -18,8 +18,19 @@ circle{
 
 <body>
     <svg viewBox="0 0 200 100">
-        <circle cy="50" cx="100" r="40" > ></circle>
+        <circle id = "c" cy="50" cx="100" r="40" > ></circle>
     </svg>
+    <script>
+        let isBig=true;
+        const c = document.getElementById('c');
+
+        c.addEventListener('click',()=>{
+        c.setAttribute('r', isBig ? 20:40);
+        isBig=!isBig;
+        });
+        
+
+    </script>
 </body>
 
 </html>

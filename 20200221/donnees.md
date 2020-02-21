@@ -13,12 +13,13 @@
 - **Qui a créé le jeu de données? Dans quel but?**
 
   The data is sourced from this [World Bank dataset](http://data.worldbank.org/indicator/SP.POP.TOTL) which in turn lists as sources: 
-  (1) United Nations Population Division. World Population Prospects, *
-  (2) United Nations Statistical Division. Population and Vital Statistics Reprot (various years), *
-  (3) Census reports and other statistical publications from national statistical offices, *
-  (4) Eurostat: Demographic Statistics, *
-  (5) Secretariat of the Pacific Community: Statistics and Demography Programme, and *
-  *(6) U.S. Census Bureau: International Database.*
+
+  * (1) United Nations Population Division. World Population Prospects
+  * (2) United Nations Statistical Division. Population and Vital Statistics Reprot (various years), 
+  * (3) Census reports and other statistical publications from national statistical offices,
+  * (4) Eurostat: Demographic Statistics,
+  * (5) Secretariat of the Pacific Community: Statistics and Demography Programme, and
+  * *(6) U.S. Census Bureau: International Database.*
 
   
 
