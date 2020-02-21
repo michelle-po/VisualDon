@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        circle:hover {
+            fill: black;
+            stroke: black;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <svg viewBox="0 0 200 100" >
+        <circle id="c0" cy="50" cx="0" r="10" ></circle>
+        <circle id="c1" cy="50" cx="50" r="10" > ></circle>
+        <circle id="c2" cy="50" cx="100" r="10"> ></circle>
+        <circle id="c3" cy="50" cx="150" r="10" > ></circle>
+        <circle id="c4" cy="50" cx="200" r="10"> ></circle> 
+    </svg>
+
+
+    <script>
+        let isBig0 = false;
+        let isBig1 = false;
+        let isBig2 = false;
+        let isBig3 = false;
+        let isBig4 = false;
+        let isBig5 = false;
+
+        
+
+        const c0 = document.getElementById('c0');
+        c0.addEventListener('click', () => {
+            c0.setAttribute('r', isBig0 ? 10 : 40);
+            c0.setAttribute('fill',isBig0 ? "black": "yellow")
+            isBig0 = !isBig0;
+        });
+
+
+        const c1 = document.getElementById('c1');
+        c1.addEventListener('click', () => {
+            c1.setAttribute('r', isBig1 ? 10 : 40);
+            c1.setAttribute('fill',isBig1 ? "black": "orange")
+            isBig1 = !isBig1;
+        });
+
+        const c2 = document.getElementById('c2');
+
+        c2.addEventListener('click', () => {
+            c2.setAttribute('r', isBig2 ? 10 : 40);
+            c2.setAttribute('fill',isBig2 ? "black": "red")
+            isBig2 = !isBig2;
+        });
+
+        const c3 = document.getElementById('c3');
+
+        c3.addEventListener('click', () => {
+            c3.setAttribute('r', isBig3 ? 10 : 40);
+            c3.setAttribute('fill',isBig3 ? "black": "purple")
+            isBig3 = !isBig3;
+        });
+
+        const c4 = document.getElementById('c4');
+
+        c4.addEventListener('click', () => {
+            c4.setAttribute('r', isBig4 ? 10 : 40);
+            c4.setAttribute('fill',isBig4 ? "black": "blue")
+            isBig4 = !isBig4;
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>
