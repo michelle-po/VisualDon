@@ -5,11 +5,12 @@ const villes = [
   { nom: 'Renens', population: 21036 },
   { nom: 'Nyon', population: 20533 },
   { nom: 'Vevey', population: 19827 },
-]
+];
 
-const nomsDesVilles = villes
+const nom = ville => ville.nom;
+const nomsDesVilles = villes.map(nom);
 
-console.log('Noms des villes', nomsDesVilles)
+console.log('Noms des villes', nomsDesVilles);
 
 /*
 [
@@ -22,9 +23,10 @@ console.log('Noms des villes', nomsDesVilles)
 ]
 */
 
-const villesDePlusDe30000Habitants = villes
+const villesDePlusDe30000Habitants = villes.filter(villes => villes.population > 30000);
 
-console.log('Ville de plus de 30000 habitants', villesDePlusDe30000Habitants)
+console.log('Ville de plus de 30000 habitants', villesDePlusDe30000Habitants);
+
 
 /*
 [
@@ -39,17 +41,30 @@ console.log('Ville de plus de 30000 habitants', villesDePlusDe30000Habitants)
   ]
 */
 
-const habitantsYverdon = villes
+function estYverdon(villes){
+  return villes.nom === 'Yverdon';
+}
+const habitantsYverdon = villes.find(estYverdon).population;
 
-console.log('Nombre d\'habitants à Yverdon', habitantsYverdon)
+console.log('Nombre d\'habitants à Yverdon:', habitantsYverdon);
 
 // 30143
 
+
+
+
+
+
 const sommeHabitants = villes
+.map(ville => villes.population)
+.reduce((result, population) => result + population, 0);
 
 console.log('Nombre total d\'habitants', sommeHabitants)
 
 // 257018
+
+
+
 
 
 
