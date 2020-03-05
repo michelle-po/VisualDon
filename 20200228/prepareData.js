@@ -1,5 +1,7 @@
 
-const data = require('./noms.json')
+const fs = require('fs');
+
+const data = fs.readFileSync('noms.json', 'utf-8');
 
 const result =   data
   .filter(d => d.plz === '1000')
