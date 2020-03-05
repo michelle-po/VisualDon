@@ -12,7 +12,7 @@ Creation d'un fichier prepareData.js que a l'execution est sensé de trier les d
 
 pour lancer l'execution il faut faire ce code dans le terminale dans le fichier 20200228:
 ```
-node preapreData.js > data.son
+node prepareData.js > data.json
 ```
 
 et avec ce commande est possible mettre les données trié (finales) tous dans data.json sous forme de tableau bidimensionel.
