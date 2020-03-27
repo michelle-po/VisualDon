@@ -6,23 +6,29 @@
 
    - Convertir les xlsx en csv
 
-     1. Installer une librairie xlsx
+     1. Installer une librairie xlsx (xslx) avec la commande:
 
-     2. Créer un scripte
+        ```
+        npm install xlsx --save
+        ```
 
-     3. Passer le nom du fichier et la "feuille" au scripte de la fonction avec le commande:
+     2. Créer un nouveau scripte js
 
+     3. Passer le nom du fichier et la "feuille" au scripte avec le commande:
+
+        ```
         `node xlsxToCsv NOM_DU_FICHIER NOM_DE_LA_FEUILLE > FICHIER_CSV`
+        ```
 
-     4. A repeter pour tous les fichiers
+     4. A repeter pour tous les fichiers qui on doit convertire
 
    - Joindre les données entre elles en faisant une conversion csv en json
 
      --> Trois scriptes différents pour les trois differents feuiles, à faire selon les données que on veux
 
-   - Joindre les jeux de données avec l'utilisation d'un donné comune a les trois feuilles (l'identifiant geo)
+   - Joindre les jeux de données avec l'utilisation d'un donné comune a les trois feuilles (l'identifiant "geo")
 
-   - Définir une clé avec les corchet carré []
+   - Définir une clé avec les crochet carré []
 
    - Créer un script bash pour avoir une seule commande qui lancera toutes les commandes que nous avons utilisées, les une après les autres.
 
