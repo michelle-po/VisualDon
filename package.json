@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/michelle-po/VisualDon#readme",
   "dependencies": {
-    "d3": "^5.15.0"
+    "d3": "^5.15.0",
+    "xlsx": "^0.15.6"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
