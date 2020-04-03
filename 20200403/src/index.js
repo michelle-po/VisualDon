@@ -1,5 +1,7 @@
 import * as d3 from 'd3'
 import cantons from './cantons.json'
+import lakes from './lakes.json'
+import districts from './districts.json'
 
 
 
@@ -23,26 +25,25 @@ const svg = d3.select(document.body).append('svg')
   .attr('width', WIDTH)
   .attr('height', HEIGHT)
 
-const groupecantons = svg.append('g')
-groupecantons.selectAll('path')
-  .data(cantons.features)
+
+
+
+ const groupelakes = svg.append('g')
+groupelakes.selectAll('path')
+  .data(lakes.features)
   .enter()
   .append('path')
   .attr('d', pathCreator)
-  .attr('fill', 'none')
-  .attr('stroke', 'black')
-  .attr('stroke-width', 3)
+  .attr('fill', 'blue')
+  .attr('stroke', 'white')
+  .attr('stroke-width', 1)
 
-    // les coordonnées de la gare d'Yverdon
-    const yverdon = [2539070, 1181442]
-
-    // projeter le point
-    const yverdonX = projectX(yverdon[0])
-    const yverdonY = projectY(yverdon[1])
-    
-    // dessiner le point
-    svg.append('circle')
-      .attr('cx', yverdonX)
-      .attr('cy', yverdonY)
-      .attr('r', 10)
-      .attr('fill', 'red')
+  const groupedistricts = svg.append('g')
+  groupedistricts.selectAll('path')
+    .data(districts.features)
+    .enter()
+    .append('path')
+    .attr('d', pathCreator)
+    .attr('fill', 'none')
+    .attr('stroke', 'black')
+    .attr('stroke-width', 1)
