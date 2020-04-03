@@ -21,4 +21,3 @@ Nous pensons d’abord partir du fichier csv qui nous est donné après avoir t�
 https://www.kaggle.com/leonardopena/top50spotify2019
 
 **Nota bene** : dans le cas où nous aurions besoin de plus de données, nous avons trouvé les datas suivantes et toujours sur le même thème de la musique:https://www.kaggle.com/danield2255/data-on-songs-from-billboard-19992019#songAttributes_1999-2019.csv
-
