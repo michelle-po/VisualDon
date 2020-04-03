@@ -5,3 +5,9 @@
 node_modules
 20200228/.cache
 20200228/dist
+node_modules
+20200403.cache
+20200403/dist
+node_modules
+.cache
+**/dist

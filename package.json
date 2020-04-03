@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "batons:dev": "parcel 20200228/src/index.html --out-dir 20200228/dist"
+    "dev:cartographie": "parcel 20200403/src/index.html --out-dir 20200403/dist"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/michelle-po/VisualDon#readme",
   "dependencies": {
-    "d3": "^5.15.0",
+    "d3": "^5.15.1",
     "xlsx": "^0.15.6"
   },
   "devDependencies": {

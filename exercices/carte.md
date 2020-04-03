@@ -1,0 +1,1 @@
+Utilisez les données et la librairie de votre choix. Vous pouvez faire cet exercice dans votre repo de cours ou dans un autre repo. Ajoutez simplement un lien vers le code dans le fichier `exercices/carte.md`.
