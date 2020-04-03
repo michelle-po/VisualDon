@@ -1,6 +1,6 @@
 # Projet de fin de cours
 
-Michelle Ponti, Majka Voide & Audrey Zeugin
+Michelle Ponti, Majka Voide & Audrey Zeugin  
 
 VisualDon | M47 | Comem+ | Heig-vd | 2020
 
