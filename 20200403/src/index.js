@@ -21,13 +21,14 @@ const projection = d3.geoTransform({
     )
   }
 })
+
 const pathCreator = d3.geoPath().projection(projection)
 
 // un groupe pour les routes
-const groupeRoutes = svg.append('g')
+const groupecantons = svg.append('g')
 
 
-groupeRoutes.selectAll('path')
+groupecantons.selectAll('path')
   .data(data)
   .enter()
   .append('path')
