@@ -1,18 +1,11 @@
 import * as d3 from 'd3'
-import { geoPath, geoMercator, select } from 'd3'
-import cantons from 'cantons.json'
-
-const fs = require('fs');
-
-const data = fs.readFileSync(cantons, 'utf-8');
-
+import cantons from './cantons.json'
 const xMin = 2486148
 const yMin = 1076497
 const xMax = 2833837
 const yMax = 1295164
 const WIDTH = 1000
-const HEIGHT = width * ((yMax - yMin) / (xMax - xMin))
-
+const HEIGHT = WIDTH * ((yMax - yMin) / (xMax - xMin))
 const projection = d3.geoTransform({
   point: function(x, y) {
     this.stream.point(
@@ -21,15 +14,15 @@ const projection = d3.geoTransform({
     )
   }
 })
-
 const pathCreator = d3.geoPath().projection(projection)
 
-// un groupe pour les routes
+const svg = select('#carte').append('svg')
+  .attr('width', WIDTH)
+  .attr('height', HEIGHT)
+
 const groupecantons = svg.append('g')
-
-
 groupecantons.selectAll('path')
-  .data(data)
+  .data(cantons.features)
   .enter()
   .append('path')
   .attr('d', pathCreator)
