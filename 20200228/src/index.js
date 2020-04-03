@@ -1,5 +1,7 @@
 import * as d3 from 'd3'
 
+const svg = d3.select(document.body).append('svg')
+
 const WIDTH = 1000
 const HEIGHT = 500
 const MARGIN = 5
