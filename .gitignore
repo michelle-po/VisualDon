@@ -5,9 +5,21 @@
 node_modules
 20200228/.cache
 20200228/dist
-node_modules
+20200228/node_modules
+
 20200403.cache
 20200403/dist
-node_modules
-.cache
+20200403/node_modules
+
+20200221.cache
+20200221/dist
+20200221/node_modules
+
+carte mondiale.cache
+carte mondiale/dist
+carte mondiale/node_modules
+
+graphique.cache
+graphique/dist
+graphique/node_modules
 **/dist

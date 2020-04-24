@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "cours de VisualDon de la heig-vd",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:cartographie": "parcel 20200403/src/index.html --out-dir 20200403/dist"
+  "scripts" :{
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "deploy": "surge dist --domain graphique.surge.sh"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,10 @@
   },
   "homepage": "https://github.com/michelle-po/VisualDon#readme",
   "dependencies": {
+    "@turf/turf": "^5.1.6",
+    "cheerio": "^1.0.0-rc.3",
     "d3": "^5.15.1",
+    "surge": "^0.21.3",
     "xlsx": "^0.15.6"
   },
   "devDependencies": {
