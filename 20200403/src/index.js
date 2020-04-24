@@ -1,9 +1,6 @@
 import * as d3 from 'd3'
-import cantons from './cantons.json'
 import lakes from './lakes.json'
 import districts from './districts.json'
-
-
 
 const xMin = 2486148
 const yMin = 1076497
@@ -25,9 +22,6 @@ const svg = d3.select(document.body).append('svg')
   .attr('width', WIDTH)
   .attr('height', HEIGHT)
 
-
-
-
  const groupelakes = svg.append('g')
 groupelakes.selectAll('path')
   .data(lakes.features)
@@ -47,3 +41,4 @@ groupelakes.selectAll('path')
     .attr('fill', 'none')
     .attr('stroke', 'black')
     .attr('stroke-width', 1)
+
