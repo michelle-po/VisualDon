@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "deploy": "surge dist --carte.surge.sh"
+    "deploy": "surge dist --voyages.surge.sh"
   },
   "license": "ISC",
   "dependencies": {

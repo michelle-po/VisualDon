@@ -6,8 +6,8 @@ import countries from './countries.json'
 import data from './drugs.json'
 
 // définir la taille du svg
-const WIDTH = 800
-const HEIGHT = 400
+const WIDTH = 1200
+const HEIGHT = 600
 
 // ajouter un <svg> à la <div id="carte">
 const svg = select('#carte').append('svg')
@@ -27,12 +27,48 @@ svg.selectAll('path')
     .append('path')
     .attr('d', pathCreator)
 
-// les coordonnées de la gare d'Yverdon
-const yverdon = [6.64123, 46.78109]
+// les coordonnées de ny
+const sharm = [34.2351252662109, 27.847802624618062]
+const miami=[-80.1936589,25.7742658]
+const sanfrancisco=[-122.4199061,37.7790262]
+const dubai=[55.1713,25.0657]
+const mexique=[-86.9202746,20.4317585]
+
 
 // pour projeter un point, nous devons utiliser la projection directement
 svg.append('circle')
-  .attr('cx', projection(yverdon)[0])
-  .attr('cy', projection(yverdon)[1])
+  .attr('cx', projection(sharm)[0])
+  .attr('cy', projection(sharm)[1])
+  .attr('r', 5)
+  .attr('fill', 'red')
+
+
+
+  svg.append('circle')
+  .attr('cx', projection(miami)[0])
+  .attr('cy', projection(miami)[1])
+  .attr('r', 5)
+  .attr('fill', 'red')
+
+
+
+  svg.append('circle')
+  .attr('cx', projection(sanfrancisco)[0])
+  .attr('cy', projection(sanfrancisco)[1])
+  .attr('r', 5)
+  .attr('fill', 'red')
+
+
+
+  svg.append('circle')
+  .attr('cx', projection(dubai)[0])
+  .attr('cy', projection(dubai)[1])
+  .attr('r', 5)
+  .attr('fill', 'red')
+
+
+  svg.append('circle')
+  .attr('cx', projection(mexique)[0])
+  .attr('cy', projection(mexique)[1])
   .attr('r', 5)
   .attr('fill', 'red')
