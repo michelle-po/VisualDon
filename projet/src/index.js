@@ -3,16 +3,16 @@
 import dessinerGraphiqueDrugs from './drugs-leaflet.js'
 //import dessinerGraphiqueBatons from './batons.js'
 
-dessinerGraphiqueDrugs('map')
+//dessinerGraphiqueDrugs('map')
 //dessinerGraphiqueBatons('batons')
 
 import countries from '../data/countries.json'
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
-/*import L from 'leaflet'
+import L from 'leaflet'
 //import 'leaflet-defaulticon-compatibility'
 
-var map = L.map('map').setView([0, 0], 1);
+var map = L.map('map').setView([20, 0], 2);
 
       L.tileLayer('https://api.maptiler.com/maps/positron/{z}/{x}/{y}.png?key=eiKhCNn6PEp5PueYXKV5',{
         tileSize: 512,
@@ -23,10 +23,13 @@ var map = L.map('map').setView([0, 0], 1);
       }).addTo(map);
 
 // la couche avec les arbres
-const data = L.geoJSON(countries)
-
+//const data = L.geoJSON(countries)
+let geoJson
 // ajouter la couche à "map"
-data.addTo(map)
+L.geoJson(countries).addTo(map);
+
+
+/////////couleurs
 
 function getColor(d) {
   return d > 15 ? '#084594' :
@@ -35,28 +38,32 @@ function getColor(d) {
          d > 4  ? '#6baed6' :
          d > 3   ? '#9ecae1' :
          d > 2   ? '#c6dbef' :
-         d > 1   ? '#deebf7' :
+         d > 1   ? '#dd3497' :
          d > 0.5   ? '#f7fbff' :
                     '#FFFFFF';
 }
 
 function style(feature) {
-  return {
-      fillColor: getColor(feature.properties.drugs),
-      weight: 2,
-      opacity: 1,
-      color: 'black',
-      fillOpacity: 0.7
-  };
+    return {
+        fillColor: getColor(feature.properties.drug),
+        weight: 2,
+        opacity: 1,
+        color: 'black',
+        dashArray: '3',
+        fillOpacity: 0.7
+    };
 }
 
+L.geoJson(countries, {style: style}).addTo(map);
+
+
+////////////////////
 function highlightFeature(e) {
   var layer = e.target;
 
   layer.setStyle({
       weight: 5,
       color: '#666',
-      dashArray: '',
       fillOpacity: 0.7
   });
 
@@ -64,6 +71,7 @@ function highlightFeature(e) {
       layer.bringToFront();
   }
 }
+
 function resetHighlight(e) {
   geojson.resetStyle(e.target);
 }
@@ -83,4 +91,4 @@ function onEachFeature(feature, layer) {
 geojson = L.geoJson(data, {
   style: style,
   onEachFeature: onEachFeature
-}).addTo(map);*/
+}).addTo(map);

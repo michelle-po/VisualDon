@@ -1,3 +1,5 @@
+/////////////////////////////// avec leaflet
+
 // importer les pays
 import countries from '../data/countries.json'
 

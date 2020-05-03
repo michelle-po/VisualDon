@@ -1,3 +1,6 @@
+//////////////ancienne avec D3
+
+
 import { select, geoNaturalEarth1, geoPath } from 'd3'
 
 // importer les pays
