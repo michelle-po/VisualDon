@@ -1,12 +1,12 @@
 # Projet de fin de cours
 
-Michelle Ponti, Majka Voide & Audrey Zeugin  
+**Michelle Ponti, Majka Voide & Audrey Zeugin**  
 
 VisualDon | M47 | Comem+ | Heig-vd | 2020
 
 ------
 
-*D'où viennent les données (où, qui, pourquoi...)*
+***D'où viennent les données (où, qui, pourquoi...)***
 
 Les données viennent de ourworldindata.org, un site spécialisé en données sur les personnes. Plus spécifiquement:
 [https://ourworldindata.org/grapher/death-rates-from-drug-use-disorders](https://ourworldindata.org/grapher/death-rates-from-drug-use-disorders)
@@ -15,15 +15,15 @@ Les données viennent de ourworldindata.org, un site spécialisé en données su
 
 On a choisi cette thématique parce qu’elle regroupe des causes de mortalité qui généralement, en tant que jeunes, on regarde pas avec le juste poids. Donc avec nos graphiques on aimerait montrer à notre génération les terribles effets de ces 3 mauvaises habitudes (tabac, alcool et drogues).
 
-*Comment elles ont été transformées*
+***Comment elles ont été transformées***
 
 Téléchargés en format .csv, en cours de progression
 
-*Un lien vers le code source de votre visualisation*
+***Un lien vers le code source de votre visualisation***
 
 en cours de progression
 
-*Un lien vers votre visualisation publiée*
+***Un lien vers votre visualisation publiée***
 
 Nous n’avons pas encore de liens à montrer
 
@@ -31,7 +31,7 @@ Nous n’avons pas encore de liens à montrer
 
 en cours de progression
 
-*À faire: 5 graphiques*
+***À faire: 5 graphiques***
 
 - Map D3 représentant le taux de mortalité en 2017 (à voir si on ajoute une timeline) sur 100’000 personnes du au tabac (Majka, fait)
 
