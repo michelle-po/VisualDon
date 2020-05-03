@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "cours de VisualDon de la heig-vd",
   "main": "index.js",
-  "scripts" :{
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html",
-    "deploy": "surge dist --domain graphique.surge.sh"
+  "scripts": {
+    "dev": "parcel projet/src/index.html",
+    "build": "parcel build projet/src/index.html"
   },
   "repository": {
     "type": "git",
