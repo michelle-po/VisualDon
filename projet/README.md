@@ -9,9 +9,18 @@ VisualDon | M47 | Comem+ | Heig-vd | 2020
 ***D'où viennent les données (où, qui, pourquoi...)***
 
 Les données viennent de ourworldindata.org, un site spécialisé en données sur les personnes. Plus spécifiquement:
+
+Drug:
 [https://ourworldindata.org/grapher/death-rates-from-drug-use-disorders](https://ourworldindata.org/grapher/death-rates-from-drug-use-disorders)
-[https://ourworldindata.org/grapher/death-rate-smoking?tab=map
-](https://ourworldindata.org/grapher/death-rate-smoking?tab=maphttps://ourworldindata.org/grapher/death-rates-from-alcohol-use-disorders
+
+Smoking:
+https://ourworldindata.org/grapher/death-rate-smoking?tab=map
+
+Alcohol:
+https://ourworldindata.org/grapher/death-rate-smoking?tab=maphttps://ourworldindata.org/grapher/death-rates-from-alcohol-use-disorders
+
+Map du mond:
+https://github.com/johan/world.geo.json/blob/master/countries.geo.json
 
 On a choisi cette thématique parce qu’elle regroupe des causes de mortalité qui généralement, en tant que jeunes, on regarde pas avec le juste poids. Donc avec nos graphiques on aimerait montrer à notre génération les terribles effets de ces 3 mauvaises habitudes (tabac, alcool et drogues).
 
