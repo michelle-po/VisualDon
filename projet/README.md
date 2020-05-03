@@ -36,14 +36,14 @@ en cours de progression
 
 Nous n’avons pas encore de liens à montrer
 
-*Quel scripte je dois utiliser pour recréer le site à partir de votre code*
+***Quel scripte je dois utiliser pour recréer le site à partir de votre code***
 
 en cours de progression
 
 ***À faire: 5 graphiques***
 
-- Map D3 représentant le taux de mortalité en 2017 (à voir si on ajoute une timeline) sur 100’000 personnes du au tabac (Majka, fait)
-
-- Map D3 représentant le taux de mortalité en 2017 sur 100’000 personnes à cause de l’alcool (Audrey, pas terminé)Map D3 représentant le taux de mortalité en 2017 (à voir si on ajoute une timeline) sur 100’000 personnes à cause de la drogue (Michelle, pas terminé)
-- Map D3 représentant l’addiction des 3 taux de mortalité en 2017(à voir si on ajoute une timeline) , avec le top 20 des pays les plus touchés de ces mauvaises habitudes. (Toutes, à faire)
+- Map avec Leaflet  représentant le taux de mortalité en 2017 (à voir si on ajoute une timeline) sur 100’000 personnes du au tabac (Majka, fait)
+- Map avec Leaflet représentant le taux de mortalité en 2017 sur 100’000 personnes à cause de l’alcool (Audrey, pas terminé)
+- Map avec Leaflet représentant le taux de mortalité en 2017 (à voir si on ajoute une timeline) sur 100’000 personnes à cause de la drogue (Michelle, pas terminé)
+- Map avec Leaflet représentant l’addiction des 3 taux de mortalité en 2017(à voir si on ajoute une timeline) , avec le top 20 des pays les plus touchés de ces mauvaises habitudes. (Toutes, à faire)
 - Graphique dynamique (Bar Chart Race) en bâton qui montre la progression des 3 causes de mort (tabac, alcool et drogues) pendant les années (1990-2017). (Toutes, à faire)
