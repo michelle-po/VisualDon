@@ -22,7 +22,7 @@
     "cheerio": "^1.0.0-rc.3",
     "d3": "^5.15.1",
     "surge": "^0.21.3",
-    "xlsx": "^0.15.6"
+    "xlsx": "^0.17.0"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
